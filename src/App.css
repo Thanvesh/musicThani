@@ -1,13 +1,60 @@
+@import url("https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap");
+
+.App {
+  text-align: center;
+}
+
 .app-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  width: 100vw;
+  height: auto;
+  padding: 20px;
+  background-color: #bf93bd;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  text-align: center;
+}
+
+.h1 {
+  font-size: 28px;
+  color: #1b044f;
+  font-family: sans-serif;
+}
+.search-bar {
+  margin: 20px;
+}
+
+.song-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   gap: 20px;
 }
 
-.song-card,
-.playlist,
-.song-detail {
-  border: 1px solid #ccc;
-  padding: 15px;
-  border-radius: 10px;
+.song-card {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: center;
+  width: 80%;
+}
+
+.song-cover {
+  width: 100%;
+  height: auto;
+}
+
+.playlist-container {
+  margin-top: 20px;
+}
+
+.playlist {
+  border: 1px solid #ddd;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.playlist-song {
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }

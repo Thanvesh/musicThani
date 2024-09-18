@@ -1,0 +1,75 @@
+.song-card {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 10px;
+  margin-bottom: 10px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  width: 500px; /* Maximum width for larger screens */
+  margin: 10px auto; /* Center the card horizontally */
+}
+
+.song-details {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.music-icon {
+  color: #555;
+}
+
+.song-info {
+  margin-left: 20px;
+}
+
+.song-info h3 {
+  margin: 0;
+  font-size: 1.2rem;
+  color: #333;
+}
+
+.song-info p {
+  margin: 0;
+  color: #666;
+  font-size: 0.9rem;
+}
+
+select {
+  border: 0px solid #ddd;
+  border-radius: 4px;
+  padding: 5px;
+  margin-left: 20px;
+  font-size: 0.9rem;
+}
+
+button {
+  background-color: #7e174f;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 8px 12px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+
+button:hover {
+  background-color: #000000;
+}
+
+button .fa-play {
+  margin-right: 5px;
+}
+
+/* Responsive styles */
+@media (min-width: 768px) {
+  .song-card {
+    width: 50%; /* Width for larger screens (e.g., laptops) */
+  }
+}
