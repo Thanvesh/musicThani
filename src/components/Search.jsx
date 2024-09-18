@@ -1,27 +1,20 @@
 import React, { useState } from "react";
-import axios from "axios";
+import "./search.css";
 
-const SearchBar = ({ onSearchResults }) => {
+const SearchBar = ({ onSearch }) => {
   const [query, setQuery] = useState("");
 
-  const handleSearch = async () => {
-    try {
-      const response = await axios.get(
-        `https://cms.samespace.com/items/songs/search?query=${query}`
-      );
-      onSearchResults(response.data.songs);
-    } catch (error) {
-      console.error("Error fetching songs", error);
-    }
+  const handleSearch = () => {
+    onSearch(query);
   };
 
   return (
     <div className="search-bar">
       <input
         type="text"
+        placeholder="Search by song or artist"
         value={query}
         onChange={(e) => setQuery(e.target.value)}
-        placeholder="Search for songs or artists"
       />
       <button onClick={handleSearch}>Search</button>
     </div>
